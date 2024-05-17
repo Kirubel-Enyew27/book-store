@@ -17,6 +17,7 @@ func main() {
 
 	router.POST("/books", controllers.CreateBook)
 	router.GET("/books", controllers.GetBooks)
+	router.GET("/books/:id", controllers.GetBookByID)
 
 	router.Run(":8080")
 }
